@@ -1,0 +1,416 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.landing-page{
+    width:100%;
+    height:70vh;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-page::after{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background: url(img/asdqwe.png) no-repeat;
+    background-size:cover;
+    opacity: 0.2;
+    animation: anim 25s linear infinite;
+
+}
+@keyframes anim{
+    50%{
+        transform:  scale(2);
+    }
+    100%{
+        transform:  scale(1);
+    }
+}
+.page-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.page-content h1{
+    color:#78e08f;
+    text-transform: uppercase;
+    font-size:50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.page-content p{
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.page-content a{
+    display:inline-block;
+    text-decoration: none;
+    color:#78e08f;
+    border:2px solid #78e08f;
+    text-transform: uppercase;
+    padding:10px 20px;
+    transition:  0.4 linear;
+}
+.page-content a:hover{
+    color:#fff;
+    background: #78e08f;
+}
+.text {
+    padding:10px;
+    text-align: justify;
+}
+
+.text div{
+    margin-bottom:6px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .services-section{
+    background: url(img/codebg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    
+    
+    
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: #78e08f;
+    margin: 40px auto;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #78e08f;
+    color:#78e08f;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #78e08f;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+
+  .testimonial-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonial-section{
+    
+    background-size: cover;
+    background-position: center;
+      padding: 40px 0;
+  }
+  .inner-width1{
+    
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .testimonial-section h1{
+      text-align: center;
+      color:#fff;
+      font-size: 4vw;
+  }
+
+  .border1{
+    width: 100px;
+    height: 3px;
+    background: #78e08f;
+    margin: 40px auto;
+  }
+
+  .testimonial{
+      background: #f1f1f1;
+      padding:40px;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+
+  .test-info{
+      display:flex;
+      height:60px;
+      align-items:center;
+  }
+  .test-pic{
+      width:50px !important ;
+      border-radius: 50%;
+      margin-right: 15px;
+  }
+  .test-name{
+      font-size:12px;
+      color:#333;
+  }
+
+  .test-name span{
+      display:block;
+      font-size:14px;
+      font-weight: 700;
+      color:#44bd32;
+  }
+  .testimonial p{
+      font-size:12px;
+      line-height: 22px;
+      margin-top: 20px;
+  }
+
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background:url(img/darkgreenabstract.jpg);
+    padding: 60px; 
+    background-position: center;
+}
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color:white;
+    font-size:40px;
+}
+.border2{
+    display: block;
+    margin:auto;
+    width:160px;
+    height: 3px;
+    background:#e1b12c;
+    margin-bottom:40px;
+}
+.ps{
+    margin-bottom: 40px;
+}
+.ps a{
+    display:inline-block;
+    margin:0 30px;
+    width:160px;
+    height:160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ps a img {
+    width:100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover>img{
+    filter:none;
+}
+
+.section{
+    width:600px;
+    margin:auto;
+    font-size:20px;
+    color:white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target{
+    height: auto;
+}
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:22px;
+}
+
+
+.gotopbtn{
+  position: fixed;
+  width:50px;
+  height: 50px;
+  background:#78e08f;
+  bottom:40px;
+  right:50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color:white;
+  font-size:22px;
+}
+
+.body1{
+ background-image: linear-gradient(125deg,#1a2a3a,#27ae60,#0d3550,#6d6309,#00e67a);
+ background-size:400%;
+ animation: bganimation 15s infinite;
+}
+
+.middle{
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,50%);
+}
+.mouse{
+  width:100px;
+  height:180px;
+
+  
+}
+
+.mouse::before{
+  content:"";
+  width:25px;
+  height:25px;
+  position: absolute;
+  top:30px;
+  background: #78e08f;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation:mouse 2s infinite;
+}
+
+
+
+
+
+
+
+@keyframes mouse{
+  from {
+    opacity: 1;
+    top:100px;
+  }
+  to {
+    opacity: 0;
+    top:0px;
+  }
+}
+
+@keyframes bganimation{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+
+@media screen and (min-width:960px) {
+  .mouse{
+    display:none;
+
+  }
+  .middle{
+    display: none;
+  }
+}
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+    .testimonial-section h1{
+      text-align: center;
+      color:#fff;
+      font-size: 8vw;
+  }
+
+  .gotopbtn{
+    position: fixed;
+    width:50px;
+    height: 50px;
+    background:#78e08f;
+    bottom:20px;
+    right:10px;
+  }
+
+
+
+  
+  }
+
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+    
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+
+    
+  }
+  
